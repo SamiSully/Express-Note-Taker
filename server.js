@@ -31,6 +31,9 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "./public/index.html"));
   });
 
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
+  });
 // =============================================================================
 // LISTENER
 // The below code effectively "starts" our server
