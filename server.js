@@ -1,8 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const db = require("./db/db.json");
-const { response } = require("express");
+let db = require("./db/db.json");
 const app = express();
 let newId = 1;
 
@@ -51,8 +50,9 @@ app.post("/api/notes", function (req, res) {
 
 app.delete("/api/notes/:id", function (req, res) {
   try {
-    const currentId = db.pop(req.params.id);
-    res.json(req.body);
+    db = db.filter((note) => note.id != req.params.id);
+    res.json({message: 'your note was deleted!'});
+    
   } catch (err) {
     throw err;
   }
