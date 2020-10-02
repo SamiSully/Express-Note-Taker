@@ -1,7 +1,7 @@
 # Express-Note-Taker
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-![Image of Screenshot](Assets/employeemanagerDEMO.png)
+![Image of Screenshot](assets/NoteTakerDEMO.gif)
 
 (https://express-note-taker-sami.herokuapp.com/)
 
@@ -41,4 +41,4 @@ MIT License
 Copyright © Sami Sully 2020
   
 ## Questions
-If you have any questions, you can reach out to me directly at samilsuly@gmail.com
+If you have any questions, you can reach out to me directly at samilsully@gmail.com
